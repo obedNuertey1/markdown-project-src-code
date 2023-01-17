@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  max-width: 60%;
+  width: 60%;
+  margin: 20px auto 0 auto;
+  padding-bottom: 10vh;
+}
+
+.myHeader p {
+  background-color: #a68a64;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 0;
+  padding: 0 5px 0 5px;
+}
+
+.symbol {
+  float: right;
+}
+
+.symbol:hover {
+  color: rgba(0, 0, 0, 0.13);
+}
+
+#editor {
+  padding: 4px;
+  width: 100%;
+  height: 30vh;
+  border: none;
+  font-size: 14px;
+  -webkit-box-decoration-break: none;
+          box-decoration-break: none;
+  background-color: #c2c5aa;
+}
+
+#myEditor {
+  border-radius: 5px;
+  margin: 0 auto 3rem auto;
+  width: 60%;
+  height: 30vh;
+}
+
+.zoomMyEditor {
+  width: 100% !important;
+}
+
+.zoomEditor {
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+#myPreview {
+  height: 100%;
+}
+
+#preview {
+  margin-top: 0;
+  background: #c2c5aa;
+  padding: 10px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+#preview pre code {
+  word-wrap: break-word;
+  padding-left: 5px;
+}
+
+@media (max-width: 900px) and (min-width: 200px) {
+  .container-fluid {
+    max-width: 90% !important;
+  }
+  #editor {
+    font-size: 13px !important;
+  }
+  #myEditor {
+    width: 100%;
+  }
+  #preview {
+    font-size: 13px !important;
+  }
+  #preview p img {
+    width: 50%;
+  }
+  #preview table {
+    width: 100%;
+  }
+  #preview code {
+    width: 150%;
+  }
+}
+h1 {
+  border-bottom: 2px solid black;
+}
+
+h2 {
+  border-bottom: 1.4px solid black;
+}
+
+p img {
+  width: 20%;
+}
+
+code {
+  display: block;
+  background-color: #fff;
+  line-height: -1;
+  font-family: "Courier New", Courier, monospace;
+}
+
+p code {
+  display: inline;
+}
+
+table {
+  border: 1px solid black;
+  width: 60%;
+}
+table thead {
+  border: 1px solid black;
+  width: 100%;
+}
+table thead tr > th {
+  border: 1px solid black;
+  text-align: center;
+}
+table tbody {
+  width: 100%;
+}
+table tbody tr > td {
+  border: 1px solid black;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

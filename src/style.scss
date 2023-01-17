@@ -1,0 +1,157 @@
+@mixin box-sizing($z) {
+  -moz-box-sizing: $z;
+  -webkit-box-sizing: $z;
+  box-sizing: $z;
+}
+
+* {
+  @include box-sizing(border-box);
+  padding: 0;
+  margin: 0;
+}
+$paper: #c2c5aa;
+$bar: #a68a64;
+
+.container-fluid {
+  max-width: 60%;
+  width: 60%;
+  margin: 20px auto 0 auto;
+  padding-bottom: 10vh;
+}
+
+.myHeader p {
+  background-color: $bar;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 0;
+  //  padding-left: 5px;
+  //  padding-right: 5px;
+  padding: 0 5px 0 5px;
+}
+
+.symbol {
+  float: right;
+}
+
+.symbol:hover {
+  color: rgba(0, 0, 0, 0.13);
+}
+//################# For The Editor ###########################
+#editor {
+  padding: 4px;
+  width: 100%;
+  height: 30vh;
+  border: none;
+  font-size: 14px;
+  box-decoration-break: none;
+  background-color: $paper;
+}
+
+#myEditor {
+  border-radius: 5px;
+  margin: 0 auto 3rem auto;
+  width: 60%;
+  //  height: 100px;
+  height: 30vh;
+}
+
+.zoomMyEditor {
+  width: 100% !important;
+}
+.zoomEditor {
+  width: 100% !important;
+  height: 100vh !important;
+}
+//######################## PC Screen Editor Ends ###############
+
+//######################## Previewer ###########################
+#myPreview {
+  height: 100%;
+}
+
+#preview {
+  margin-top: 0;
+  background: $paper;
+  padding: 10px;
+  font-size: 14px;
+  word-wrap: break-word;
+  pre code {
+    word-wrap: break-word;
+    padding-left: 5px;
+  }
+}
+
+//####################### Previewer Ends #######################
+
+@media (max-width: 900px) and (min-width: 200px) {
+  .container-fluid {
+    max-width: 90% !important;
+  }
+  #editor {
+    font-size: 13px !important;
+  }
+  #myEditor {
+    width: 100%;
+  }
+  #preview {
+    font-size: 13px !important;
+    p img {
+      width: 50%;
+    }
+    table {
+      width: 100%;
+    }
+    code {
+      width: 150%;
+    }
+  }
+}
+
+$heading: (
+  h1: h1,
+  h2: h2,
+);
+
+$i: 0;
+@each $key, $tag in $heading {
+  #{$tag} {
+    border-bottom: (2px - $i * 0.6) solid black;
+  }
+  $i: $i + 1;
+}
+
+p img {
+  width: 20%;
+}
+
+code {
+  display: block;
+  background-color: #fff;
+  line-height: -1;
+  font-family: "Courier New", Courier, monospace;
+}
+
+p code {
+  display: inline;
+  //  color: black;
+}
+
+table {
+  border: 1px solid black;
+  width: 60%;
+  thead {
+    border: 1px solid black;
+    width: 100%;
+    tr > th {
+      border: 1px solid black;
+      text-align: center;
+    }
+  }
+  tbody {
+    width: 100%;
+    tr > td {
+      border: 1px solid black;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "presets": [["react-app", { "flow": true, "typescript": false }]],
+  "plugins": [
+    [
+      "prismjs",
+      {
+        "languages": ["javascript", "css", "markup"],
+        "plugins": ["line-numbers"],
+        "theme": "twilight",
+        "css": true
+      }
+    ]
+  ]
+}
