@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Markdown Previewer - Documentation
+### Overview:
+- [Introduction](#introduction)
+- [Available Scripts](#available-scripts)
+- [Learn More](#learn-more)
+- [Visit Site](https://markdown-gen.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+This markdown previewer converts typed markdown in a markdown editor into html which can be previewed in a previewer window
+
+![image](https://github.com/obedNuertey1/markdown-project-src-code/assets/101027384/9ce9424e-0f2c-4b2f-b62a-5732bb1419fe)
+
 
 ## Available Scripts
 
